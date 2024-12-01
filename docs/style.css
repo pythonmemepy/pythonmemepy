@@ -13,6 +13,13 @@ body {
     line-height: 1.6;
 }
 
+/* Logo Styling */
+.logo {
+    width: 150px;  /* Adjust the width as needed */
+    height: auto;  /* Maintain aspect ratio */
+    margin-bottom: 20px;  /* Space between the logo and heading */
+}
+
 /* Header Styling */
 header {
     background-color: #306998; /* Python Blue */
