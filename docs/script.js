@@ -1,14 +1,18 @@
 // Function to scroll to the relevant section
 function scrollToSection(sectionId) {
     // Get the element by id and scroll it into view
-    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+    var section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
 
-    // Highlight the section (optional, for better UX)
+    // Hide the main page content when a section is clicked
+    var mainContent = document.querySelector('header');
+    mainContent.style.display = 'none'; // Hide header with main page text
+    
+    // Show the active section
     var sections = document.querySelectorAll('section');
-    sections.forEach(function(section) {
-        section.classList.remove('active');
+    sections.forEach(function(sec) {
+        sec.style.display = 'none'; // Hide all sections
     });
-
-    var activeSection = document.getElementById(sectionId);
-    activeSection.classList.add('active');
+    
+    section.style.display = 'block'; // Show the clicked section
 }

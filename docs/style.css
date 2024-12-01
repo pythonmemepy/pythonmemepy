@@ -11,11 +11,12 @@ body {
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Logo Styling */
 .logo {
-    width: 600px;
+    width: 500px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -64,25 +65,23 @@ main {
     padding: 40px 20px;
 }
 
-section {
-    display: none; /* Hide sections by default */
+/* Blue Background for Sections */
+.section-blue {
+    background-color: #306998; /* Python Blue */
+    color: #FFD43B; /* Python Yellow */
+    padding: 40px;
     margin-top: 20px;
     text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
 }
 
 section p {
     font-size: 1.2em;
     margin-top: 10px;
-}
-
-section.active {
-    display: block; /* Show active section */
-}
-
-.tabcontent h2 {
-    color: #306998; /* Python Blue */
-    font-size: 2em;
-    margin-bottom: 15px;
 }
 
 /* Footer Styling */
@@ -95,4 +94,3 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
