@@ -60,23 +60,29 @@ nav {
 }
 
 /* Section Styling */
-.tabcontent {
-    display: none;
-    padding: 20px;
-    text-align: center;
-    background-color: #f9f9f9;
+main {
+    padding: 40px 20px;
+}
+
+section {
+    display: none; /* Hide sections by default */
     margin-top: 20px;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+section.active {
+    display: block; /* Show active section */
 }
 
 .tabcontent h2 {
     color: #306998; /* Python Blue */
     font-size: 2em;
     margin-bottom: 15px;
-}
-
-.tabcontent p {
-    font-size: 1.2em;
-    margin-top: 10px;
 }
 
 /* Footer Styling */
@@ -89,3 +95,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
