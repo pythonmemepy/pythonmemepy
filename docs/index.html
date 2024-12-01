@@ -13,32 +13,34 @@
         <p>Your fun and revolutionary token powered by Xian Network!</p>
     </header>
 
-    <main>
-        <div class="buttons">
-            <button class="btn" onclick="location.href='#about'">About</button>
-            <button class="btn" onclick="location.href='#swap'">swaPYit</button>
-            <button class="btn" onclick="location.href='#join'">Join the Fun!</button>
-        </div>
+    <nav>
+        <button class="tablinks" onclick="openTab(event, 'about')">About</button>
+        <button class="tablinks" onclick="openTab(event, 'swap')">swaPYit</button>
+        <button class="tablinks" onclick="openTab(event, 'join')">Join the Fun!</button>
+    </nav>
 
-        <section id="about" class="about">
+    <main>
+        <section id="about" class="tabcontent">
             <h2>About Python Meme PY</h2>
             <p>Python Meme PY is a meme token created to bring fun and excitement to the crypto space. Built on the Xian Network, we are one of the first tokens to embrace the power of Python.</p>
         </section>
 
-        <section id="swap" class="swap">
+        <section id="swap" class="tabcontent">
             <h2>Introducing swaPYit</h2>
             <p>swaPYit will be your go-to platform for fast, easy, and secure token swaps on the Xian Network. Swap your Python Meme PY tokens effortlessly!</p>
         </section>
 
-        <section id="join" class="join">
+        <section id="join" class="tabcontent">
             <h2>Join the Fun!</h2>
             <p>Become part of the community, swap tokens, and enjoy the ride as we take Python Meme PY to new heights!</p>
+            <p>Join us on Telegram: <a href="https://t.me/pythonmemepy" target="_blank">Python Meme PY Telegram</a></p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Python Meme PY Token - All rights reserved.</p>
-        <p>Join us on Telegram: <a href="https://t.me/pythonmemepy" target="_blank">Telegram</a></p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
