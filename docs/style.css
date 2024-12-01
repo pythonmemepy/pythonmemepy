@@ -8,89 +8,136 @@
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #306998; /* Python Blue */
+    color: #FFD43B; /* Python Yellow */
     line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* Logo Styling */
+/* Navigation Bar */
+header nav {
+    text-align: center;
+    background-color: #306998; /* Python Blue */
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FFD43B; /* Python Yellow */
+    font-size: 1.2em;
+    padding: 8px 15px;
+    border: 2px solid #FFD43B; /* Yellow border */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #FFD43B; /* Python Yellow background */
+    color: #306998; /* Python Blue text */
+}
+
+/* Logo Container */
+.logo-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
 .logo {
     width: 500px;
     height: auto;
-    margin-bottom: 20px;
 }
 
-/* Header Styling */
-header {
-    background-color: #306998; /* Python Blue */
-    color: #FFD43B; /* Python Yellow */
-    text-align: center;
-    padding: 40px 20px;
-}
-
-header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.5em;
-    margin-top: 0;
-}
-
-/* Button Styling */
-nav {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.tablinks {
-    background-color: #FFD43B; /* Python Yellow */
-    color: #306998; /* Python Blue */
-    border: none;
-    padding: 14px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin: 5px;
-}
-
-.tablinks:hover {
-    background-color: #306998; /* Python Blue */
-    color: #FFD43B; /* Python Yellow */
-}
-
-/* Section Styling */
+/* Main Content */
 main {
-    padding: 40px 20px;
-}
-
-/* Blue Background for Sections */
-.section-blue {
-    background-color: #306998; /* Python Blue */
-    color: #FFD43B; /* Python Yellow */
-    padding: 40px;
-    margin-top: 20px;
     text-align: center;
+    padding: 50px 20px;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
+.intro-text h1 {
+    font-size: 3em;
+    font-family: 'Lobster', sans-serif;
 }
 
-section p {
-    font-size: 1.2em;
-    margin-top: 10px;
+.intro-text p {
+    font-size: 1.5em;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #306998;
-    color: #FFD43B;
+    background-color: #306998; /* Python Blue */
+    color: #FFD43B; /* Python Yellow */
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+/* Telegram Logo Styling for SVG */
+.telegram-logo {
+    width: 100px;  /* Adjust the size as needed */
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;  /* Smooth scaling effect */
+}
+
+.telegram-logo:hover {
+    transform: scale(1.1);  /* Scale logo on hover */
+}
+/* General Logo Styling */
+img {
+    width: 100%;  /* Adjust based on your preferred size */
+    max-width: 500px;  /* Maximum size */
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Center the logo */
+}
+
+/* About page logo styling */
+.about-logo-img {
+    width: 100%;  /* Adjust based on your preferred size */
+    max-width: 500px;  /* Maximum size */
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Center the logo */
+}
+
+/* Tokenomics page logo styling */
+.tokenomics-logo-img {
+    width: 100%;  /* Adjust based on your preferred size */
+    max-width: 500px;  /* Maximum size */
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Center the logo */
+}
+
+/* swaPYit page logo styling */
+.swaPYit-logo-img {
+    width: 100%;  /* Adjust based on your preferred size */
+    max-width: 500px;  /* Maximum size */
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Center the logo */
+}
+
+/* Join page logo styling */
+.join-logo-img {
+    width: 100%;  /* Adjust based on your preferred size */
+    max-width: 500px;  /* Maximum size */
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Center the logo */
 }
