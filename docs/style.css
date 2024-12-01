@@ -5,15 +5,21 @@
     box-sizing: border-box;
 }
 
-/* Body Styling */
+/* ========================
+   Global Styles
+=========================*/
+/* Body Styling (global for all pages) */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Global font */
     background-color: #306998; /* Python Blue */
     color: #FFD43B; /* Python Yellow */
     line-height: 1.6;
 }
 
-/* Navigation Bar */
+/* ========================
+   Navigation Styles
+=========================*/
+/* Navigation Bar Styling (global for all pages) */
 header nav {
     text-align: center;
     background-color: #306998; /* Python Blue */
@@ -45,35 +51,53 @@ header nav ul li a:hover {
     color: #306998; /* Python Blue text */
 }
 
-/* Logo Container */
-.logo-container {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.logo {
-    width: 500px;
+/* ========================
+   Logo Styles
+=========================*/
+/* General Logo Styling (for all pages) */
+img {
+    width: 100%;  /* Adjust based on your preferred size */
+    max-width: 500px;  /* Maximum size */
     height: auto;
+    display: block;
+    margin: 0 auto;  /* Center the logo */
 }
 
-/* Main Content */
+/* Specific Logo Styles for Each Page */
+.about-logo-img, .tokenomics-logo-img, .swaPYit-logo-img, .join-logo-img {
+    width: 100%;
+    max-width: 500px;  /* Maximum size for logos */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ========================
+   Main Content Styles
+=========================*/
+/* Main Section Styling */
 main {
     text-align: center;
     padding: 50px 20px;
 }
 
+/* Header Font Styling (can be adjusted for each page separately) */
 .intro-text h1 {
     font-size: 3em;
-    font-family: 'Lobster', sans-serif;
+    font-family: 'Lobster', sans-serif; /* Change this font for different pages */
 }
 
+/* Text Styling (can be adjusted for each page separately) */
 .intro-text p {
     font-size: 1.5em;
     font-family: 'Arial', sans-serif;
     margin-top: 20px;
 }
 
-/* Footer */
+/* ========================
+   Footer Styles
+=========================*/
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 15px;
@@ -83,7 +107,11 @@ footer {
     width: 100%;
     bottom: 0;
 }
-/* Telegram Logo Styling for SVG */
+
+/* ========================
+   Telegram Logo Styling
+=========================*/
+/* Telegram Logo Styling */
 .telegram-logo {
     width: 100px;  /* Adjust the size as needed */
     height: auto;
@@ -97,47 +125,72 @@ footer {
 .telegram-logo:hover {
     transform: scale(1.1);  /* Scale logo on hover */
 }
-/* General Logo Styling */
-img {
-    width: 100%;  /* Adjust based on your preferred size */
-    max-width: 500px;  /* Maximum size */
-    height: auto;
-    display: block;
-    margin: 0 auto;  /* Center the logo */
+
+/* ========================
+   Section-Specific Styles
+=========================*/
+/* About Page Styles */
+.about-page {
+    background-color: #306998; /* Python Blue */
+    color: #FFD43B; /* Python Yellow */
 }
 
-/* About page logo styling */
-.about-logo-img {
-    width: 100%;  /* Adjust based on your preferred size */
-    max-width: 500px;  /* Maximum size */
-    height: auto;
-    display: block;
-    margin: 0 auto;  /* Center the logo */
+.about-page .about-header {
+    font-size: 3.5em;
+    font-family: 'Lobster', sans-serif; /* Header Font for About */
 }
 
-/* Tokenomics page logo styling */
-.tokenomics-logo-img {
-    width: 100%;  /* Adjust based on your preferred size */
-    max-width: 500px;  /* Maximum size */
-    height: auto;
-    display: block;
-    margin: 0 auto;  /* Center the logo */
+/* Tokenomics Page Styles */
+.tokenomics-page {
+    background-color: #306998; /* Python Blue */
+    color: #FFD43B; /* Python Yellow */
 }
 
-/* swaPYit page logo styling */
-.swaPYit-logo-img {
-    width: 100%;  /* Adjust based on your preferred size */
-    max-width: 500px;  /* Maximum size */
-    height: auto;
-    display: block;
-    margin: 0 auto;  /* Center the logo */
+.tokenomics-page .tokenomics-header {
+    font-size: 3.5em;
+    font-family: 'Lobster', sans-serif; /* Header Font for Tokenomics */
 }
 
-/* Join page logo styling */
-.join-logo-img {
-    width: 100%;  /* Adjust based on your preferred size */
-    max-width: 500px;  /* Maximum size */
-    height: auto;
-    display: block;
-    margin: 0 auto;  /* Center the logo */
+/* swaPYit Page Styles */
+.swapyit-page {
+    background-color: #306998; /* Python Blue */
+    color: #FFD43B; /* Python Yellow */
+}
+
+.swapyit-page .swapyit-header {
+    font-size: 3.5em;
+    font-family: 'Lobster', sans-serif; /* Header Font for swaPYit */
+}
+
+/* Join Page Styles */
+.join-page {
+    background-color: #306998; /* Python Blue */
+    color: #FFD43B; /* Python Yellow */
+}
+
+.join-page .join-header {
+    font-size: 3.5em;
+    font-family: 'Lobster', sans-serif; /* Header Font for Join */
+}
+
+/* ========================
+   Responsive Design
+=========================*/
+/* Mobile Styling */
+@media only screen and (max-width: 768px) {
+    /* Make the navigation links stack on mobile */
+    header nav ul {
+        text-align: left;
+        padding: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Adjust image size for mobile */
+    img {
+        max-width: 100%;
+    }
 }
