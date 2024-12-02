@@ -15,7 +15,7 @@
 
 /* Body Styling (global for all pages) */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Orbitron', sans-serif; /* Updated to Orbitron font */
     background-color: rgba(8, 26, 50, 255); /* Dark Blue */
     color: #FFD43B; /* Python Yellow */
     line-height: 1.6;
