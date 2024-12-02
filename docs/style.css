@@ -16,7 +16,7 @@
 /* Body Styling (global for all pages) */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #306998; /* Python Blue */
+    background-color: rgba(8, 26, 50, 255); /* Dark Blue */
     color: #FFD43B; /* Python Yellow */
     line-height: 1.6;
     font-size: var(--font-size-base); /* Use variable for flexibility */
