@@ -30,11 +30,11 @@ body {
 }
 
 .medium-text {
-    font-size: var(--font-size-base) * 4.0;
+    font-size: calc(var(--font-size-base) * 1.15);
 }
 
 .small-text {
-    font-size: calc(var(--font-size-base) * 2);
+    font-size: calc(var(--font-size-base) * 0.85);
 }
 
 /* ========================
@@ -97,7 +97,7 @@ h1, h2 {
 =========================*/
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     background-color: rgba(8, 26, 50, 255); /* Dark Blue */
     color: #FFD43B;
     position: fixed;
