@@ -67,7 +67,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #FFD43B;
+    background-color: rgba(8, 26, 50, 255); /* Dark Blue */
     color: #306998;
 }
 
@@ -98,7 +98,7 @@ h1, h2 {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #306998;
+    background-color: rgba(8, 26, 50, 255); /* Dark Blue */
     color: #FFD43B;
     position: fixed;
     width: 100%;
