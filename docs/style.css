@@ -155,4 +155,40 @@ footer {
 .tokenomics-logo-img:hover {
     transform: scale(1.0); /* Slight zoom on hover */
 }
+.tokenomics-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.tokenomics-table {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    color: #FFD43B;
+    font-size: var(--font-size-base);
+}
+
+.tokenomics-table th,
+.tokenomics-table td {
+    border: 1px solid #FFD43B;
+    padding: 10px;
+    text-align: center;
+}
+
+.tokenomics-table th {
+    background-color: rgba(8, 26, 50, 255);
+    color: #FFD43B;
+}
+
+.tokenomics-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tokenomics-table tr:nth-child(odd) {
+    background-color: rgba(8, 26, 50, 0.5);
+}
 
