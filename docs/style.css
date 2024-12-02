@@ -26,11 +26,11 @@ body {
    Text Size Classes
 =========================*/
 .large-text {
-    font-size: calc(var(--font-size-base) * 3.0);
+    font-size: calc(var(--font-size-base) * 10.0);
 }
 
 .medium-text {
-    font-size: var(--font-size-base) * 1.0;
+    font-size: var(--font-size-base) * 4.0;
 }
 
 .small-text {
