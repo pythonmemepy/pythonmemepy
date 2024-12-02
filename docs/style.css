@@ -93,6 +93,14 @@ h1, h2 {
 }
 
 /* ========================
+   Text Spacing for Paragraphs
+=========================*/
+p.medium-text {
+    margin-top: 40px;  /* Add space above each paragraph */
+    margin-bottom: 40px; /* Keep space between paragraphs */
+}
+
+/* ========================
    Footer Styles
 =========================*/
 footer {
