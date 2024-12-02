@@ -1,3 +1,11 @@
+/* ========================
+   Root Variables for Global Control
+=========================*/
+:root {
+    --font-size-base: 16px;
+    --font-size-heading: 2.5em;
+}
+
 /* General Reset */
 * {
     margin: 0;
@@ -5,24 +13,36 @@
     box-sizing: border-box;
 }
 
-/* ========================
-   Global Styles
-=========================*/
 /* Body Styling (global for all pages) */
 body {
-    font-family: 'Arial', sans-serif; /* Global font */
+    font-family: 'Arial', sans-serif;
     background-color: #306998; /* Python Blue */
     color: #FFD43B; /* Python Yellow */
     line-height: 1.6;
+    font-size: var(--font-size-base); /* Use variable for flexibility */
+}
+
+/* ========================
+   Text Size Classes
+=========================*/
+.large-text {
+    font-size: calc(var(--font-size-base) * 1.5);
+}
+
+.medium-text {
+    font-size: var(--font-size-base);
+}
+
+.small-text {
+    font-size: calc(var(--font-size-base) * 0.85);
 }
 
 /* ========================
    Navigation Styles
 =========================*/
-/* Navigation Bar Styling (global for all pages) */
 header nav {
     text-align: center;
-    background-color: #306998; /* Python Blue */
+    background-color: #306998;
     padding: 15px 0;
 }
 
@@ -38,147 +58,68 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #FFD43B; /* Python Yellow */
+    color: #FFD43B;
     font-size: 1.2em;
     padding: 8px 15px;
-    border: 2px solid #FFD43B; /* Yellow border */
+    border: 2px solid #FFD43B;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 header nav ul li a:hover {
-    background-color: #FFD43B; /* Python Yellow background */
-    color: #306998; /* Python Blue text */
+    background-color: #FFD43B;
+    color: #306998;
 }
 
 /* ========================
-   Logo Styles
+   Logo and Main Content
 =========================*/
-/* General Logo Styling (for all pages) */
-img {
-    width: 100%;  /* Adjust based on your preferred size */
-    max-width: 500px;  /* Maximum size */
-    height: auto;
-    display: block;
-    margin: 0 auto;  /* Center the logo */
-}
-
-/* Specific Logo Styles for Each Page */
-.about-logo-img, .tokenomics-logo-img, .swaPYit-logo-img, .join-logo-img {
+.logo {
+    max-width: 500px;
     width: 100%;
-    max-width: 500px;  /* Maximum size for logos */
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* ========================
-   Main Content Styles
-=========================*/
-/* Main Section Styling */
 main {
     text-align: center;
     padding: 50px 20px;
 }
 
-/* Header Font Styling (can be adjusted for each page separately) */
-.intro-text h1 {
-    font-size: 3em;
-    font-family: 'Lobster', sans-serif; /* Change this font for different pages */
-}
-
-/* Text Styling (can be adjusted for each page separately) */
-.intro-text p {
-    font-size: 1.5em;
-    font-family: 'Arial', sans-serif;
-    margin-top: 20px;
+/* Page-specific heading */
+h1, h2 {
+    font-size: var(--font-size-heading); /* Control all headings globally */
 }
 
 /* ========================
    Footer Styles
 =========================*/
-/* Footer Styling */
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #306998; /* Python Blue */
-    color: #FFD43B; /* Python Yellow */
+    background-color: #306998;
+    color: #FFD43B;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
-/* ========================
-   Telegram Logo Styling
-=========================*/
 /* Telegram Logo Styling */
 .telegram-logo {
-    width: 100px;  /* Adjust the size as needed */
-    height: auto;
+    width: 100px;
     margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease;  /* Smooth scaling effect */
+    transition: transform 0.3s ease;
 }
 
 .telegram-logo:hover {
-    transform: scale(1.1);  /* Scale logo on hover */
-}
-
-/* ========================
-   Section-Specific Styles
-=========================*/
-/* About Page Styles */
-.about-page {
-    background-color: #306998; /* Python Blue */
-    color: #FFD43B; /* Python Yellow */
-}
-
-.about-page .about-header {
-    font-size: 3.5em;
-    font-family: 'Lobster', sans-serif; /* Header Font for About */
-}
-
-/* Tokenomics Page Styles */
-.tokenomics-page {
-    background-color: #306998; /* Python Blue */
-    color: #FFD43B; /* Python Yellow */
-}
-
-.tokenomics-page .tokenomics-header {
-    font-size: 3.5em;
-    font-family: 'Lobster', sans-serif; /* Header Font for Tokenomics */
-}
-
-/* swaPYit Page Styles */
-.swapyit-page {
-    background-color: #306998; /* Python Blue */
-    color: #FFD43B; /* Python Yellow */
-}
-
-.swapyit-page .swapyit-header {
-    font-size: 3.5em;
-    font-family: 'Lobster', sans-serif; /* Header Font for swaPYit */
-}
-
-/* Join Page Styles */
-.join-page {
-    background-color: #306998; /* Python Blue */
-    color: #FFD43B; /* Python Yellow */
-}
-
-.join-page .join-header {
-    font-size: 3.5em;
-    font-family: 'Lobster', sans-serif; /* Header Font for Join */
+    transform: scale(1.1);
 }
 
 /* ========================
    Responsive Design
 =========================*/
-/* Mobile Styling */
 @media only screen and (max-width: 768px) {
-    /* Make the navigation links stack on mobile */
     header nav ul {
         text-align: left;
         padding: 10px;
@@ -189,7 +130,6 @@ footer {
         margin: 10px 0;
     }
 
-    /* Adjust image size for mobile */
     img {
         max-width: 100%;
     }
