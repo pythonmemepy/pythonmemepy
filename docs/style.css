@@ -42,7 +42,7 @@ body {
 =========================*/
 header nav {
     text-align: center;
-    background-color: #306998;
+    background-color: rgba(8, 26, 50, 255); /* Dark Blue */
     padding: 15px 0;
 }
 
