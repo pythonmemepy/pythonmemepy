@@ -144,7 +144,7 @@ footer {
 }
 /* Tokenomics Image Styling */
 .tokenomics-logo-img {
-    width: 300%; /* Image takes 80% of the container width */
+    width: 300%; /* Image takes 300% of the container width */
     max-width: 1800px; /* Maximum width set to 800px */
     height: auto; /* Maintain aspect ratio */
     display: block;
