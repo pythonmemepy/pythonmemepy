@@ -114,14 +114,16 @@ footer {
 }
 
 /* Telegram Logo Styling */
-.telegram-logo {
+.join-logos {
     width: 100px;
     margin-top: 20px;
     transition: transform 0.3s ease;
+    margin-left: 40px;  
+    margin-right: 40px; 
 }
 
-.telegram-logo:hover {
-    transform: scale(1.1);
+.join-logos:hover {
+    transform: scale(2.0);
 }
 
 /* ========================
